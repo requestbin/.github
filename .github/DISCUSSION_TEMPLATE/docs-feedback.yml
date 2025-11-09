@@ -1,0 +1,24 @@
+labels: ["discussion: docs"]
+category: Docs Feedback
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Help us improve the docs. Please include the page link.
+  - type: input
+    id: page
+    attributes:
+      label: Docs page URL
+      placeholder: https://requestbin.net/docs/... or /apps/.../docs
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: What's missing or unclear?
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Your suggested fix or example

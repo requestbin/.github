@@ -5,6 +5,7 @@
 [![Blog](https://img.shields.io/badge/Blog-Tech%20Guides%20%26%20Updates-22c55e)](https://blog.requestbin.net)
 [![Follow @requestbin](https://img.shields.io/twitter/follow/requestbin?style=flat&label=%40requestbin&color=0ea5e9)](https://twitter.com/requestbin)
 [![Open Source Roots](https://img.shields.io/badge/Open%20Source-Roots-64748b)](https://github.com/requestbin/requestbin.net)
+[![GitHub Discussions](https://img.shields.io/github/discussions/orgs/requestbin?label=chat%20%F0%9F%92%AC)](https://github.com/orgs/requestbin/discussions)
 
 **RequestBin** helps developers, researchers, and security teams **capture, inspect, and debug requests**—from webhooks to OAST flows—via a **cloud-first platform** and **developer-friendly tooling**.
 
@@ -63,7 +64,7 @@ A lightweight extension that brings **RequestBin-powered collaboration** to Burp
 
 We actively support our community of developers and researchers:
 
-- **Issues & Discussions:** Open issues for v2.0 references and plugin feedback  
+- **💬 Questions or ideas?** Join our [GitHub Discussions](https://github.com/orgs/requestbin/discussions)
 - **Blog:** Deep dives, tutorials, and release notes → https://blog.requestbin.net  
 - **X (Twitter):** Announcements, tips, and threads → https://twitter.com/requestbin
 

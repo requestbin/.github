@@ -1,0 +1,35 @@
+labels: ["discussion: idea"]
+category: Ideas & Feedback
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Share your idea! High-signal posts are easier to prioritize.
+  - type: input
+    id: what
+    attributes:
+      label: What would you like to build or improve?
+      placeholder: New App – DNS Callback Inspector
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem / use case
+      description: What problem does this solve? Who benefits?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal / rough design
+      description: Sketch the UI flow or APIs if relevant.
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope
+      options:
+        - label: App page
+        - label: Bin integration
+        - label: Docs update
+        - label: SDK/API

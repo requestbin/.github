@@ -1,0 +1,13 @@
+labels: ["announcement"]
+category: Announcements
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Release / Update
+        Summarize what's new, links to apps and docs.
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Changelog highlights, thanks to contributors.

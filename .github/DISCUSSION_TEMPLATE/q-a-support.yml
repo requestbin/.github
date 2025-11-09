@@ -1,0 +1,36 @@
+labels: ["discussion: q&a"]
+category: Q&A / Support
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for opening a Q&A! Please provide enough detail so others can help.
+  - type: input
+    id: topic
+    attributes:
+      label: Topic summary
+      description: One sentence describing the question.
+      placeholder: e.g., How to inspect SMTP callbacks?
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Steps tried, expected vs actual, screenshots, etc.
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - App Hub / Apps
+        - Inspect / Bin
+        - Docs
+        - Other
+  - type: input
+    id: links
+    attributes:
+      label: Links
+      description: Optional links (bin URL without secrets, docs page, etc.)

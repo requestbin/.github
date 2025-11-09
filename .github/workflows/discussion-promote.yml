@@ -1,0 +1,31 @@
+name: Promote Discussions to Issues
+on:
+  discussion:
+    types: [created, edited]
+  discussion_comment:
+    types: [created]
+permissions:
+  contents: write
+  issues: write
+  discussions: read
+jobs:
+  promote:
+    if: >-
+      contains(github.event.discussion.category.name, 'Ideas') ||
+      contains(github.event.discussion.category.name, 'Feedback')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create issue from discussion when label /promote is used
+        uses: peter-evans/create-issue-from-discussion@v3
+        with:
+          discussion-number: ${{ github.event.discussion.number }}
+          repository: ${{ github.repository }}
+          labels: "triage, from:discussion"
+      - name: Check for /promote command
+        if: github.event_name == 'discussion_comment'
+        uses: peter-evans/slash-command-dispatch@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          reaction-token: ${{ secrets.GITHUB_TOKEN }}
+          issue-type: discussion
+          commands: promote

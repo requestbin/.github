@@ -1,0 +1,21 @@
+labels: ["discussion: show"]
+category: Show & Tell / Use cases
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Share what you built with RequestBin! Links and screenshots welcome.
+  - type: input
+    id: title
+    attributes:
+      label: Project title
+      placeholder: Slack bot using RequestBin Apps
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description & links
+      description: Repo/demo link, what it does, and how RequestBin helped.
+    validations:
+      required: true

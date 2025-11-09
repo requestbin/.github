@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Q&A / Support (GitHub Discussions)
+    url: https://github.com/orgs/requestbin/discussions/categories/q-a-support
+    about: Ask questions and get help from the community and maintainers.
+  - name: 💡 Ideas & Feature Requests (Discussions)
+    url: https://github.com/orgs/requestbin/discussions/categories/ideas-feedback
+    about: Propose new apps, features, or improvements.
+  - name: 📚 Docs Feedback (Discussions)
+    url: https://github.com/orgs/requestbin/discussions/categories/docs-feedback
+    about: Suggest edits, report gaps, or ask for examples.
+  - name: 🚀 Show & Tell / Use cases (Discussions)
+    url: https://github.com/orgs/requestbin/discussions/categories/show-and-tell
+    about: Share what you built with RequestBin.
